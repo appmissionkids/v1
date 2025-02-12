@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 280 50% 98%; /* Light blue background */
+    --foreground: 240 10% 3.9%; /* Dark text */
+    --card: 200 50% 95%; /* Light gray card background */
+    --card-foreground: 240 10% 3.9%; /* Dark text on card */
+    --popover: 220 50% 90%; /* Slightly darker gray for popovers */
+    --popover-foreground: 240 10% 3.9%; /* Dark text on popovers */
+    --primary: 280 50% 50%; /* Bright blue primary color */
+    --primary-foreground: 0 0% 98%; /* White text on primary */
+    --secondary: 160 50% 50%; /* Purple secondary color */
+    --secondary-foreground: 240 5.9% 10%; /* Dark text on secondary */
+    --muted: 240 4.8% 95.9%; /* Light gray muted color */
+    --muted-foreground: 240 3.8% 46.1%; /* Slightly darker gray text */
+    --accent: 60 50% 50%; /* Green accent color */
+    --accent-foreground: 240 5.9% 10%; /* Dark text on accent */
+    --destructive: 0 84.2% 60.2%; /* Red destructive color */
+    --destructive-foreground: 0 0% 98%; /* White text on destructive */
+    --border: 240 5.9% 90%; /* Light gray border */
+    --input: 240 5.9% 90%; /* Light gray input background */
+    --ring: 280 50% 50%; /* Bright blue ring */
+    --radius: 1rem; /* Rounded corners */
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply font-sans antialiased bg-background text-foreground;
+  }
+}
